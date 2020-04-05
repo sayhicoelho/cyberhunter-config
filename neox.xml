@@ -1,0 +1,126 @@
+
+<ppg3d>
+	<modules>
+		<module
+			Name		= 'Audio'
+			File		= 'audio.dll'
+		/>
+		<module
+			Name		= 'Python'
+			File		= 'python.dll'
+		/>
+		<module
+			Name    = 'collision'
+			File    = 'collision.dll'
+		/>
+	</modules>
+	<client
+		ResourceRoot		= 'res'
+		DirectInput		= 'False'
+		LimitDisplayRate	= 'True'
+		ShowLogWindow		= 'False'
+		FixedLogicRate		= 'False'
+		DumpType		= '0'
+		Title			= 'ZMHD'
+		World			= '3d'
+		FileSystem		= '5'
+		WindowClientWidth = '1280'
+		WindowClientHeight = '720'
+		CopyXml = 'False'
+		WindowAutoSize = 'True'
+		CAFrameInterval = '1'
+		MaxSoundCount = '32'
+		>
+		<uis>
+			<cocosui Passing = 'False'/>
+			<pygame Passing = 'False'/>
+		</uis>
+	</client>
+	<!--profiling
+		MemoryMonitor = 'True'
+		/-->
+	<!-- <log
+		Port = 50002
+		DeviceSyncSpan = 100
+	/> -->
+	<render
+		ScreenWidth		= '1920'
+		ScreenHeight		= '1080'
+		Window			= 'False'
+		Depth			= '32'
+		MultiSample		= '10'
+		EnableRenderThread	= 'True'
+		OneLightOptimize = 'True'
+		EnableShadowMap = 'True'
+		EnableDepthShadow = 'True'
+		EffectLevel = "shader\effect_level.xml"
+		TextureSuffix = ".dds"
+		EffectCacheBehavior = "31"
+		UseD3D9 = "True"
+		VSync = "True"
+		>
+	</render>
+	<world
+		GpuSkinningEnable = 'True'
+		PixelDecal = 'True'
+		GpuParticle = 'True'
+		MergeStaticModel = 'True'
+		ModelStaticVB = 'True'
+		HardwareInstancing = 'True'
+		>
+	</world>
+	<log
+		FileName="%WORKDIR%\logs\log_%INST%.txt"
+		Level="0"
+		OldFileName="%WORKDIR%\logs\log_old_%ROTATE%.txt"
+		>
+	</log>
+	<python
+		Profiler		= 'False'
+		KeyCallback		= 'False'
+		CountFreq		= '3'
+		ThreadEnable    = 'True'
+		>
+	</python>
+	<physics
+		RemoteDebug		= 'False'
+		>
+	</physics>
+	<cocosui
+		LogLevel = '50'
+		LoadSeparateAlphaFile = "False"
+		TtfFontScale='3.0'
+		VBSize = '4096'
+		EnableBatchOptimize="True"
+		EnableLabelUndoPrepare="True"
+		SharedTextureSize="1024" >
+		<MergeSprite Enabled = "True" >
+			<MergeSprite
+				Name = "icon"
+				Algorithm = "Lines_Generic"
+				TextureSize = "2048"
+			/>
+		</MergeSprite>
+	</cocosui>
+	<filesystems>
+		<filesystem name='res'>
+			<loader name='npk' opener='os' root='%DOC_DIR%\res' depth = '2'/>
+			<loader name='npk' opener='os' root='%WORK_DIR%\res' depth = '2'/>
+			<loader name='discrete' opener='os' root='%DOC_DIR%\res'/>
+			<loader name='discrete' opener='os' root='%WORK_DIR%\res'/>
+		</filesystem>
+		<filesystem name='script'>
+			<loader name='discrete' opener='os' root='%DOC_DIR%\data'/>
+			<loader name='npk' opener='os' root='%DOC_DIR%\data' depth='0'/>
+
+			<loader name='discrete' opener='os' root='%DOC_DIR%\script'/>
+			<loader name='npk' opener='os' root='%DOC_DIR%\script' depth = '0'/>
+
+			<loader name='discrete' opener='os' root='%WORK_DIR%\data'/>
+			<loader name='npk' opener='os' root='%WORK_DIR%\data' depth='0'/>
+
+			<loader name='discrete' opener='os' root='%WORK_DIR%\script'/>
+			<loader name='npk' opener='os' root='%WORK_DIR%\script' depth = '0'/>
+		</filesystem>
+	</filesystems>
+</ppg3d>
