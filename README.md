@@ -7,8 +7,12 @@ Copy [config.ini](config.ini) and [neox.xml](neox.xml) to Cyber Hunter's directo
 ## Unset pointer precision
 Go to Control Panel / Mouse / Pointer Options and unset "Improve pointer precision".
 
+![Pointer precision screenshot](pointer-precision.png)
+
 ## Setting DPI and mouse hertz
 Open your mouse's software and set DPI to 1600 and frequency (hertz) to 1000hz.
+
+![Mouse DPI and hertz](mouse-dpi-hertz.png)
 
 ## License
 [MIT](LICENSE)
