@@ -14,5 +14,11 @@ Open your mouse's software and set DPI to 1600 and frequency (hertz) to 1000hz.
 
 ![Mouse DPI and hertz](mouse-dpi-hertz.png)
 
+## Controls
+- **Skill 1**: Q
+- **Skill 2**: T
+- **Skill 3**: F1
+- **Weapon Skill**: G or Mouse 3
+
 ## License
 [MIT](LICENSE)
