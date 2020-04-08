@@ -1,0 +1,5 @@
+Skill 1: Q
+Skill 2: T
+Skill 3: F1
+
+Weapon Skill: G or Mouse 3
