@@ -18,7 +18,7 @@ Open your mouse's software and set DPI to 1600 and frequency (hertz) to 1000hz.
 - **Skill 1**: Q
 - **Skill 2**: T
 - **Skill 3**: F1
-- **Weapon Skill**: G or Mouse 3
+- **Weapon Skill**: P or Mouse 3
 
 ## License
 [MIT](LICENSE)
